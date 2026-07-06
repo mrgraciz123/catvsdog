@@ -304,30 +304,29 @@ def main():
         with col2:
             st.markdown(
                 f"""
-                <div class="result-container">
-                    <div class="result-card {class_name}">
-                        <div style="font-size: 0.95rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">Analysis Result</div>
-                        <div class="result-label {class_name}">{emoji} {label}</div>
-                        <div class="confidence-meter">
-                            Confidence: <span class="confidence-value">{confidence:.1f}%</span>
-                        </div>
-                        <div class="meter-container">
-                            <div class="meter-bar {class_name}" style="width: {confidence:.1f}%;"></div>
-                        </div>
-                        
-                        <div class="prob-grid">
-                            <div class="prob-card {cat_active} cat">
-                                <div class="prob-title">🐱 Cat Prob</div>
-                                <div class="prob-value cat">{cat_prob:.1f}%</div>
-                            </div>
-                            <div class="prob-card {dog_active} dog">
-                                <div class="prob-title">🐶 Dog Prob</div>
-                                <div class="prob-value dog">{dog_prob:.1f}%</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                """,
+<div class="result-container">
+    <div class="result-card {class_name}">
+        <div style="font-size: 0.95rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">Analysis Result</div>
+        <div class="result-label {class_name}">{emoji} {label}</div>
+        <div class="confidence-meter">
+            Confidence: <span class="confidence-value">{confidence:.1f}%</span>
+        </div>
+        <div class="meter-container">
+            <div class="meter-bar {class_name}" style="width: {confidence:.1f}%;"></div>
+        </div>
+        <div class="prob-grid">
+            <div class="prob-card {cat_active} cat">
+                <div class="prob-title">🐱 Cat Prob</div>
+                <div class="prob-value cat">{cat_prob:.1f}%</div>
+            </div>
+            <div class="prob-card {dog_active} dog">
+                <div class="prob-title">🐶 Dog Prob</div>
+                <div class="prob-value dog">{dog_prob:.1f}%</div>
+            </div>
+        </div>
+    </div>
+</div>
+""",
                 unsafe_allow_html=True,
             )
     else:
