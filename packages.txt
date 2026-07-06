@@ -1,3 +1,2 @@
-git add packages.txt
-git commit -m "Add packages.txt for Pillow build dependencies"
-git push origin main
+zlib1g-dev
+libjpeg-dev
