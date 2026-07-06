@@ -285,7 +285,7 @@ def main():
         with col1:
             st.markdown("<p style='font-weight: 600; margin-bottom: 0.8rem; color: #f8fafc;'>Uploaded Image</p>", unsafe_allow_html=True)
             # Display image with rounded corners
-            st.image(cv2.cvtColor(image, cv2.COLOR_BGR2RGB), use_container_width=True)
+            st.image(cv2.cvtColor(image, cv2.COLOR_BGR2RGB), use_column_width=True)
 
         prediction = model.predict([resized])[0]
         probability = model.predict_proba([resized])[0]
