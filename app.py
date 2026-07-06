@@ -26,36 +26,58 @@ def apply_styles():
                 padding-bottom: 2rem;
                 max-width: 900px;
             }
+            /* Ensure all standard labels and paragraph text are dark for readability */
+            label, .stMarkdown p, .stText p, [data-testid="stWidgetLabel"] p {
+                color: #1e293b !important;
+                font-weight: 500;
+            }
             .hero-card {
                 background: linear-gradient(135deg, #007aff 0%, #34c759 100%);
                 border-radius: 22px;
                 padding: 1.1rem 1.2rem;
-                color: white;
+                color: white !important;
                 box-shadow: 0 10px 24px rgba(0, 122, 255, 0.2);
                 margin-bottom: 1rem;
             }
             .hero-card h1 {
                 margin: 0;
                 font-size: 1.8rem;
+                color: white !important;
             }
             .hero-card p {
                 margin: 0.3rem 0 0;
                 opacity: 0.95;
+                color: white !important;
             }
             .info-card {
                 background: white;
+                color: #334155 !important;
                 border-radius: 18px;
                 padding: 0.9rem 1rem;
                 box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
                 border: 1px solid rgba(148, 163, 184, 0.15);
                 margin-bottom: 1rem;
             }
+            .info-card strong {
+                color: #0f172a !important;
+            }
+            .info-card code {
+                color: #007aff !important;
+                background-color: #f1f5f9 !important;
+                padding: 0.1rem 0.3rem !important;
+                border-radius: 4px !important;
+            }
             .result-card {
                 background: #f7fbff;
+                color: #1e293b !important;
                 border-left: 5px solid #007aff;
                 border-radius: 16px;
                 padding: 0.9rem 1rem;
                 margin-top: 0.8rem;
+            }
+            .result-card h3 {
+                color: #0f172a !important;
+                margin-top: 0;
             }
         </style>
         """,
